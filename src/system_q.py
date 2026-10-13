@@ -106,10 +106,14 @@ class SystemQ:
             else:
                 adapter_path = "LuciferMorningstar777/system-q-3b-decision"
 
+        if precision == "4bit" and not torch.cuda.is_available():
+            print("CUDA is unavailable. Falling back to precision='cpu'...", flush=True)
+            precision = "cpu"
+
         print(f"Initializing System Q ({precision} precision)...", flush=True)
         self.tokenizer, base_model, _ = load_qwen_model_and_tokenizer(precision=precision)
 
-        if adapter_path and os.path.exists(adapter_path):
+        if adapter_path:
             print(f"Loading & fusing SOTA adapter from: {adapter_path}...", flush=True)
             peft_model = PeftModel.from_pretrained(base_model, adapter_path)
             self.model = peft_model.merge_and_unload()
