@@ -1,0 +1,43 @@
+benchmark:
+  seed: 42
+  warmup_runs: 5
+  timed_repeats: 3
+  batch_sizes: [1, 4, 8]
+  primary_batch_size: 1
+  timeout_seconds: 30
+
+tasks:
+  - id: "binary_urgency"
+    type: "binary"
+    labels: ["NON_URGENT", "URGENT"]
+  - id: "multiclass_routing"
+    type: "multiclass"
+    labels: ["BILLING", "TECH_SUPPORT", "ACCOUNT", "SALES"]
+  - id: "sentiment_decision"
+    type: "multiclass"
+    labels: ["NEGATIVE", "NEUTRAL", "POSITIVE"]
+  - id: "candidate_selection"
+    type: "ranking"
+    labels: ["OPTION_A", "OPTION_B", "OPTION_C"]
+  - id: "ambiguous_intent"
+    type: "ambiguous"
+    labels: ["UNCERTAIN", "RESOLVABLE"]
+  - id: "abstention_safety"
+    type: "abstention"
+    labels: ["CONFIDENT", "ABSTAIN"]
+
+models_to_benchmark:
+  - "qwen_baseline_generate"
+  - "qwen_baseline_direct_score"
+  - "system_q_decision_head"
+  - "system_q_quantized_4bit"
+  - "system_q_quantized_8bit"
+  - "system_q_early_exit"
+  - "laya_local"
+  - "jev_remote"
+
+telemetry:
+  monitor_gpu_power: true
+  sample_interval_ms: 25
+  track_vram_peak: true
+  track_ram_peak: true

@@ -1,0 +1,207 @@
+{
+  "model_name": "TypeSafe_Jev_Remote",
+  "is_remote": true,
+  "num_evaluated": 8,
+  "num_errors": 8,
+  "accuracy": 0.0,
+  "per_task_accuracy": {
+    "multiclass": {
+      "correct": 0,
+      "total": 2,
+      "accuracy": 0.0
+    },
+    "ranking": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "adversarial": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "abstention": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "ambiguous": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "binary": {
+      "correct": 0,
+      "total": 2,
+      "accuracy": 0.0
+    }
+  },
+  "speed": {
+    "cold_start_ms": null,
+    "warm_mean_ms": null,
+    "warm_median_ms": null,
+    "p90_ms": null,
+    "p95_ms": null,
+    "throughput_decisions_per_sec": null
+  },
+  "memory": {
+    "peak_vram_gb": 3.547,
+    "peak_ram_gb": 3.034
+  },
+  "energy": {
+    "measured": true,
+    "duration_s": 0.025,
+    "sample_count": 1,
+    "power_avg_w": 32.26,
+    "power_peak_w": 32.26,
+    "idle_power_w": 32.26,
+    "energy_joules": 0.8066,
+    "net_energy_joules": 0.0,
+    "energy_mj_per_decision": 100.82,
+    "wall_time_ms": 0.73,
+    "label": "TypeSafe_Jev_Remote"
+  },
+  "records": [
+    {
+      "example_id": "MC_002",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "UNAVAILABLE",
+      "is_correct": false,
+      "latency_ms": null,
+      "scores": {
+        "BILLING": 0.0,
+        "TECH_SUPPORT": 0.0,
+        "ACCOUNT": 0.0,
+        "SALES": 0.0
+      },
+      "error": "TYPESAFE_API_KEY not configured. Remote service inaccessible.",
+      "metadata": {
+        "is_remote": true,
+        "status": "UNCONFIGURED_CREDENTIALS"
+      }
+    },
+    {
+      "example_id": "RNK_001",
+      "task_type": "ranking",
+      "ground_truth": "OPTION_B",
+      "prediction": "UNAVAILABLE",
+      "is_correct": false,
+      "latency_ms": null,
+      "scores": {
+        "OPTION_A": 0.0,
+        "OPTION_B": 0.0,
+        "OPTION_C": 0.0
+      },
+      "error": "TYPESAFE_API_KEY not configured. Remote service inaccessible.",
+      "metadata": {
+        "is_remote": true,
+        "status": "UNCONFIGURED_CREDENTIALS"
+      }
+    },
+    {
+      "example_id": "ADV_002",
+      "task_type": "adversarial",
+      "ground_truth": "URGENT",
+      "prediction": "UNAVAILABLE",
+      "is_correct": false,
+      "latency_ms": null,
+      "scores": {
+        "NON_URGENT": 0.0,
+        "URGENT": 0.0
+      },
+      "error": "TYPESAFE_API_KEY not configured. Remote service inaccessible.",
+      "metadata": {
+        "is_remote": true,
+        "status": "UNCONFIGURED_CREDENTIALS"
+      }
+    },
+    {
+      "example_id": "ABS_002",
+      "task_type": "abstention",
+      "ground_truth": "CONFIDENT",
+      "prediction": "UNAVAILABLE",
+      "is_correct": false,
+      "latency_ms": null,
+      "scores": {
+        "CONFIDENT": 0.0,
+        "ABSTAIN": 0.0
+      },
+      "error": "TYPESAFE_API_KEY not configured. Remote service inaccessible.",
+      "metadata": {
+        "is_remote": true,
+        "status": "UNCONFIGURED_CREDENTIALS"
+      }
+    },
+    {
+      "example_id": "MC_006",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "UNAVAILABLE",
+      "is_correct": false,
+      "latency_ms": null,
+      "scores": {
+        "BILLING": 0.0,
+        "TECH_SUPPORT": 0.0,
+        "ACCOUNT": 0.0,
+        "SALES": 0.0
+      },
+      "error": "TYPESAFE_API_KEY not configured. Remote service inaccessible.",
+      "metadata": {
+        "is_remote": true,
+        "status": "UNCONFIGURED_CREDENTIALS"
+      }
+    },
+    {
+      "example_id": "AMB_002",
+      "task_type": "ambiguous",
+      "ground_truth": "RESOLVABLE",
+      "prediction": "UNAVAILABLE",
+      "is_correct": false,
+      "latency_ms": null,
+      "scores": {
+        "UNCERTAIN": 0.0,
+        "RESOLVABLE": 0.0
+      },
+      "error": "TYPESAFE_API_KEY not configured. Remote service inaccessible.",
+      "metadata": {
+        "is_remote": true,
+        "status": "UNCONFIGURED_CREDENTIALS"
+      }
+    },
+    {
+      "example_id": "BIN_001",
+      "task_type": "binary",
+      "ground_truth": "URGENT",
+      "prediction": "UNAVAILABLE",
+      "is_correct": false,
+      "latency_ms": null,
+      "scores": {
+        "NON_URGENT": 0.0,
+        "URGENT": 0.0
+      },
+      "error": "TYPESAFE_API_KEY not configured. Remote service inaccessible.",
+      "metadata": {
+        "is_remote": true,
+        "status": "UNCONFIGURED_CREDENTIALS"
+      }
+    },
+    {
+      "example_id": "BIN_002",
+      "task_type": "binary",
+      "ground_truth": "NON_URGENT",
+      "prediction": "UNAVAILABLE",
+      "is_correct": false,
+      "latency_ms": null,
+      "scores": {
+        "NON_URGENT": 0.0,
+        "URGENT": 0.0
+      },
+      "error": "TYPESAFE_API_KEY not configured. Remote service inaccessible.",
+      "metadata": {
+        "is_remote": true,
+        "status": "UNCONFIGURED_CREDENTIALS"
+      }
+    }
+  ]
+}

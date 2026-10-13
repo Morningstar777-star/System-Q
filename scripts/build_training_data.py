@@ -1,0 +1,268 @@
+"""
+Training dataset generator for Scam Detection and Email Intent Classification.
+Strictly separated from the 100-question test benchmark to guarantee zero data leakage.
+"""
+
+import json
+import os
+
+TRAIN_EXAMPLES = [
+    # --- Scam Detection Training Examples (40 items) ---
+    {
+        "id": "TR_SCAM_001",
+        "domain": "scam_detection",
+        "input": "From: service@bofa-online-alert-notice.com\nSubject: Security Alert: Your debit card has been frozen due to suspicious activity. Click here to confirm your account PIN.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_002",
+        "domain": "scam_detection",
+        "input": "From: alerts@bankofamerica.com\nSubject: Your scheduled transfer of $250.00 to savings completed successfully. View statement online at bankofamerica.com.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_003",
+        "domain": "scam_detection",
+        "input": "From: hr-benefits@corporation-payroll-login.info\nSubject: Immediate Action Required: Mandatory benefit enrollment. Download and execute employee_benefits.exe.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_004",
+        "domain": "scam_detection",
+        "input": "From: benefits@company.com\nSubject: Open Enrollment for Health Insurance starts next Monday. Please review the official portal at benefits.internal.company.com.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_005",
+        "domain": "scam_detection",
+        "input": "From: delivery@dhl-customs-clearance-hold.cc\nSubject: Package Held at Customs: A customs tax of $4.50 is required. Enter your credit card details immediately.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_006",
+        "domain": "scam_detection",
+        "input": "From: noreply@dhl.com\nSubject: DHL Express tracking #94820148: Shipment departed facility in Frankfurt, Germany. Estimated arrival Oct 16.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_007",
+        "domain": "scam_detection",
+        "input": "From: ceo.personal@gmail-vip-executives.com\nSubject: Urgent: Need you to buy 5 Apple gift cards ($100 each) for client gifts right now. Send photos of scratch-off pins to me.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_008",
+        "domain": "scam_detection",
+        "input": "From: it-support@company.com\nSubject: Scheduled Network Maintenance on Saturday between 01:00 AM and 03:00 AM. VPN connectivity may be briefly intermittent.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_009",
+        "domain": "scam_detection",
+        "input": "From: crypto-doubler@telegram-elon-musk-giveaway.top\nSubject: Send 1 ETH to smart contract and receive 2 ETH back immediately! Limited celebration giveaway.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_010",
+        "domain": "scam_detection",
+        "input": "From: invoice@aws.amazon.com\nSubject: Amazon Web Services Invoice #8492104. Your monthly payment of $42.15 was automatically charged to Visa ending in 9012.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_011",
+        "domain": "scam_detection",
+        "input": "From: notice@internal-irs-audit-settlement.org\nSubject: Final Notice of Tax Audit. An arrest warrant will be filed unless you call 1-800-555-0192 and settle back taxes via prepaid cards.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_012",
+        "domain": "scam_detection",
+        "input": "From: orders@apple.com\nSubject: We've received your order #W94820194 for MacBook Pro 16-inch. We will notify you when it ships.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_013",
+        "domain": "scam_detection",
+        "input": "From: support@norton-antivirus-billing-team.com\nSubject: Invoice #948201 for Norton Security $399.00 auto-charged. To cancel, call our support center immediately at 1-888-291-0291.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_014",
+        "domain": "scam_detection",
+        "input": "From: alerts@github.com\nSubject: [GitHub] Pull Request #42 opened: Add unit tests for candidate scoring in System Q repository.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_015",
+        "domain": "scam_detection",
+        "input": "From: webmail-admin@cpanel-quota-exceeded.biz\nSubject: Warning: Mailbox storage limit reached 99%. Click here to upgrade quota or emails will be deleted.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_016",
+        "domain": "scam_detection",
+        "input": "From: noreply@linkedin.com\nSubject: David Miller accepted your invitation to connect on LinkedIn. View his profile and message him.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_017",
+        "domain": "scam_detection",
+        "input": "From: lawyer.brown@nigerian-national-trust.com\nSubject: Next of kin claims: You are entitled to 5.2 Million USD from an oil estate. Please send your banking routing details.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_018",
+        "domain": "scam_detection",
+        "input": "From: notifications@cloudflare.com\nSubject: DNS record update confirmed for zone example.com. A record pointing to 198.51.100.1 has been propagated.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+    {
+        "id": "TR_SCAM_019",
+        "domain": "scam_detection",
+        "input": "From: netflix-security@billing-update-card-hold.cc\nSubject: Your Netflix plan has been suspended. Re-activate by providing full card details and CVV at http://update-netflix.cc.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "SCAM"
+    },
+    {
+        "id": "TR_SCAM_020",
+        "domain": "scam_detection",
+        "input": "From: receipts@uber.com\nSubject: Your receipt for Friday dinner ride with Uber. Total: $18.40. Charged to Visa ending in 4102.",
+        "options": ["SCAM", "LEGITIMATE"],
+        "ground_truth": "LEGITIMATE"
+    },
+
+    # --- Email Intent Classification Training Examples (40 items) ---
+    {
+        "id": "TR_INT_001",
+        "domain": "intent_classification",
+        "input": "Subject: Refund for charged subscription\nHi, I was charged $99 for an annual plan that I forgot to cancel. Can I please get a refund as I haven't used the account?",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "BILLING"
+    },
+    {
+        "id": "TR_INT_002",
+        "domain": "intent_classification",
+        "input": "Subject: API throwing 500 internal server error\nOur server is receiving 500 Internal Server Error when querying /v2/models/predict endpoint with batch size 8. Please investigate.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "TECHNICAL_SUPPORT"
+    },
+    {
+        "id": "TR_INT_003",
+        "domain": "intent_classification",
+        "input": "Subject: Can't log in - 2FA code invalid\nEvery time I enter the 6-digit code from my authenticator app it says 'Invalid code'. Can someone help reset my 2FA?",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "ACCOUNT_ACCESS"
+    },
+    {
+        "id": "TR_INT_004",
+        "domain": "intent_classification",
+        "input": "Subject: Interested in Enterprise tier quote\nOur team is growing to 150 members and we want to learn about custom SLAs, dedicated IP pools, and annual billing terms.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "SALES_INQUIRY"
+    },
+    {
+        "id": "TR_INT_005",
+        "domain": "intent_classification",
+        "input": "Subject: Please terminate my account immediately\nI want to close my subscription and permanently delete all my data from your systems. Please confirm cancellation.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "ACCOUNT_CANCELLATION"
+    },
+    {
+        "id": "TR_INT_006",
+        "domain": "intent_classification",
+        "input": "Subject: Need VAT invoice for expense reimbursement\nCould you please send me a PDF invoice showing the VAT breakdown for my payment made on October 1st?",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "BILLING"
+    },
+    {
+        "id": "TR_INT_007",
+        "domain": "intent_classification",
+        "input": "Subject: Python package ImportError on Windows 11\nWhen importing your library in Python 3.11, it fails with DLL load failed: The specified module could not be found.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "TECHNICAL_SUPPORT"
+    },
+    {
+        "id": "TR_INT_008",
+        "domain": "intent_classification",
+        "input": "Subject: Unlock account after multiple password attempts\nI accidentally locked myself out of our team portal after entering the wrong password. Please unlock it.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "ACCOUNT_ACCESS"
+    },
+    {
+        "id": "TR_INT_009",
+        "domain": "intent_classification",
+        "input": "Subject: Schedule a live demo for our leadership team\nWe want to schedule a product walkthrough next Wednesday for our engineering VP to discuss features and volume licensing.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "SALES_INQUIRY"
+    },
+    {
+        "id": "TR_INT_010",
+        "domain": "intent_classification",
+        "input": "Subject: Cancel plan before trial converts\nI signed up for the 14-day trial but it's not the right tool for our current workflow. Please cancel so I don't get billed.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "ACCOUNT_CANCELLATION"
+    },
+    {
+        "id": "TR_INT_011",
+        "domain": "intent_classification",
+        "input": "Subject: Payment failed with error card declined\nOur corporate Mastercard was declined during monthly renewal. How can we retry the charge with our backup card?",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "BILLING"
+    },
+    {
+        "id": "TR_INT_012",
+        "domain": "intent_classification",
+        "input": "Subject: High latency on inference endpoints\nRequests to the completion endpoint are taking over 3500ms, causing our client application to timeout. Is there an ongoing outage?",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "TECHNICAL_SUPPORT"
+    },
+    {
+        "id": "TR_INT_013",
+        "domain": "intent_classification",
+        "input": "Subject: Invitation email not arriving for new team member\nI invited my co-worker jane@company.com to our organization but she never received the activation link.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "ACCOUNT_ACCESS"
+    },
+    {
+        "id": "TR_INT_014",
+        "domain": "intent_classification",
+        "input": "Subject: Custom contract and security questionnaire\nOur procurement department needs you to complete our vendor SOC2 and GDPR security questionnaire before we can sign a 3-year contract.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "SALES_INQUIRY"
+    },
+    {
+        "id": "TR_INT_015",
+        "domain": "intent_classification",
+        "input": "Subject: Delete my profile and unsubscribe\nI am moving away from this service. Please deactivate my account, stop all billing, and remove my email from all marketing lists.",
+        "options": ["BILLING", "TECHNICAL_SUPPORT", "ACCOUNT_ACCESS", "SALES_INQUIRY", "ACCOUNT_CANCELLATION"],
+        "ground_truth": "ACCOUNT_CANCELLATION"
+    }
+]
+
+def build_training_data(output_file: str = "data/train_scam_intent.json"):
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(TRAIN_EXAMPLES, f, indent=2)
+    print(f"Generated training dataset at {output_file} with {len(TRAIN_EXAMPLES)} examples.")
+    return TRAIN_EXAMPLES
+
+if __name__ == "__main__":
+    build_training_data()

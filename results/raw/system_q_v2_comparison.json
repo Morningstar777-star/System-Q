@@ -1,0 +1,2020 @@
+{
+  "zero_shot": {
+    "label": "System Q 2.0 (Zero-Shot)",
+    "overall_accuracy": 70.0,
+    "scam_accuracy": 58.0,
+    "intent_accuracy": 82.0,
+    "latency_median_ms": 203.77,
+    "records": [
+      {
+        "id": "SCAM_001",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6926,
+        "margin": 0.3853,
+        "latency_ms": 1219.93
+      },
+      {
+        "id": "SCAM_002",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7663,
+        "margin": 0.5326,
+        "latency_ms": 221.71
+      },
+      {
+        "id": "SCAM_003",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6225,
+        "margin": 0.2449,
+        "latency_ms": 184.43
+      },
+      {
+        "id": "SCAM_004",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6654,
+        "margin": 0.3308,
+        "latency_ms": 185.2
+      },
+      {
+        "id": "SCAM_005",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5775,
+        "margin": 0.155,
+        "latency_ms": 188.89
+      },
+      {
+        "id": "SCAM_006",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7663,
+        "margin": 0.5326,
+        "latency_ms": 187.44
+      },
+      {
+        "id": "SCAM_007",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6926,
+        "margin": 0.3853,
+        "latency_ms": 190.23
+      },
+      {
+        "id": "SCAM_008",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6926,
+        "margin": 0.3853,
+        "latency_ms": 191.79
+      },
+      {
+        "id": "SCAM_009",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5927,
+        "margin": 0.1853,
+        "latency_ms": 188.79
+      },
+      {
+        "id": "SCAM_010",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6654,
+        "margin": 0.3308,
+        "latency_ms": 185.26
+      },
+      {
+        "id": "SCAM_011",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5927,
+        "margin": 0.1853,
+        "latency_ms": 184.17
+      },
+      {
+        "id": "SCAM_012",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7058,
+        "margin": 0.4116,
+        "latency_ms": 183.18
+      },
+      {
+        "id": "SCAM_013",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6077,
+        "margin": 0.2153,
+        "latency_ms": 190.81
+      },
+      {
+        "id": "SCAM_014",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7311,
+        "margin": 0.4621,
+        "latency_ms": 191.54
+      },
+      {
+        "id": "SCAM_015",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.5312,
+        "margin": 0.0624,
+        "latency_ms": 190.93
+      },
+      {
+        "id": "SCAM_016",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6654,
+        "margin": 0.3308,
+        "latency_ms": 187.8
+      },
+      {
+        "id": "SCAM_017",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5775,
+        "margin": 0.155,
+        "latency_ms": 189.59
+      },
+      {
+        "id": "SCAM_018",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6792,
+        "margin": 0.3584,
+        "latency_ms": 124.71
+      },
+      {
+        "id": "SCAM_019",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6792,
+        "margin": 0.3584,
+        "latency_ms": 122.86
+      },
+      {
+        "id": "SCAM_020",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7311,
+        "margin": 0.4621,
+        "latency_ms": 182.11
+      },
+      {
+        "id": "SCAM_021",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5622,
+        "margin": 0.1244,
+        "latency_ms": 184.94
+      },
+      {
+        "id": "SCAM_022",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7058,
+        "margin": 0.4116,
+        "latency_ms": 184.21
+      },
+      {
+        "id": "SCAM_023",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5622,
+        "margin": 0.1244,
+        "latency_ms": 189.59
+      },
+      {
+        "id": "SCAM_024",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7186,
+        "margin": 0.4372,
+        "latency_ms": 186.63
+      },
+      {
+        "id": "SCAM_025",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.8439,
+        "margin": 0.6878,
+        "latency_ms": 194.67
+      },
+      {
+        "id": "SCAM_026",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6654,
+        "margin": 0.3308,
+        "latency_ms": 189.94
+      },
+      {
+        "id": "SCAM_027",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5927,
+        "margin": 0.1853,
+        "latency_ms": 182.83
+      },
+      {
+        "id": "SCAM_028",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6926,
+        "margin": 0.3853,
+        "latency_ms": 185.02
+      },
+      {
+        "id": "SCAM_029",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5775,
+        "margin": 0.155,
+        "latency_ms": 184.3
+      },
+      {
+        "id": "SCAM_030",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7663,
+        "margin": 0.5326,
+        "latency_ms": 183.28
+      },
+      {
+        "id": "SCAM_031",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5927,
+        "margin": 0.1853,
+        "latency_ms": 185.8
+      },
+      {
+        "id": "SCAM_032",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7549,
+        "margin": 0.5098,
+        "latency_ms": 129.41
+      },
+      {
+        "id": "SCAM_033",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5622,
+        "margin": 0.1244,
+        "latency_ms": 189.21
+      },
+      {
+        "id": "SCAM_034",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6926,
+        "margin": 0.3853,
+        "latency_ms": 189.06
+      },
+      {
+        "id": "SCAM_035",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5775,
+        "margin": 0.155,
+        "latency_ms": 190.92
+      },
+      {
+        "id": "SCAM_036",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7663,
+        "margin": 0.5326,
+        "latency_ms": 184.58
+      },
+      {
+        "id": "SCAM_037",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.5622,
+        "margin": 0.1244,
+        "latency_ms": 193.87
+      },
+      {
+        "id": "SCAM_038",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7058,
+        "margin": 0.4116,
+        "latency_ms": 183.92
+      },
+      {
+        "id": "SCAM_039",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.5156,
+        "margin": 0.0312,
+        "latency_ms": 183.6
+      },
+      {
+        "id": "SCAM_040",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7058,
+        "margin": 0.4116,
+        "latency_ms": 187.48
+      },
+      {
+        "id": "SCAM_041",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6514,
+        "margin": 0.3027,
+        "latency_ms": 186.84
+      },
+      {
+        "id": "SCAM_042",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6926,
+        "margin": 0.3853,
+        "latency_ms": 125.54
+      },
+      {
+        "id": "SCAM_043",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6926,
+        "margin": 0.3853,
+        "latency_ms": 125.19
+      },
+      {
+        "id": "SCAM_044",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7186,
+        "margin": 0.4372,
+        "latency_ms": 188.03
+      },
+      {
+        "id": "SCAM_045",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.5467,
+        "margin": 0.0935,
+        "latency_ms": 184.05
+      },
+      {
+        "id": "SCAM_046",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7663,
+        "margin": 0.5326,
+        "latency_ms": 182.28
+      },
+      {
+        "id": "SCAM_047",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6926,
+        "margin": 0.3853,
+        "latency_ms": 182.92
+      },
+      {
+        "id": "SCAM_048",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.7186,
+        "margin": 0.4372,
+        "latency_ms": 126.35
+      },
+      {
+        "id": "SCAM_049",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.6514,
+        "margin": 0.3027,
+        "latency_ms": 186.23
+      },
+      {
+        "id": "SCAM_050",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.6077,
+        "margin": 0.2153,
+        "latency_ms": 192.12
+      },
+      {
+        "id": "INTENT_001",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.5778,
+        "margin": 0.4164,
+        "latency_ms": 414.06
+      },
+      {
+        "id": "INTENT_002",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.4252,
+        "margin": 0.2389,
+        "latency_ms": 209.97
+      },
+      {
+        "id": "INTENT_003",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": false,
+        "confidence": 0.2753,
+        "margin": 0.0442,
+        "latency_ms": 204.8
+      },
+      {
+        "id": "INTENT_004",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.3227,
+        "margin": 0.045,
+        "latency_ms": 208.42
+      },
+      {
+        "id": "INTENT_005",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.606,
+        "margin": 0.4741,
+        "latency_ms": 203.56
+      },
+      {
+        "id": "INTENT_006",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": false,
+        "confidence": 0.5703,
+        "margin": 0.3525,
+        "latency_ms": 205.69
+      },
+      {
+        "id": "INTENT_007",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.4374,
+        "margin": 0.2457,
+        "latency_ms": 211.4
+      },
+      {
+        "id": "INTENT_008",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.4564,
+        "margin": 0.2926,
+        "latency_ms": 210.19
+      },
+      {
+        "id": "INTENT_009",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.4295,
+        "margin": 0.2317,
+        "latency_ms": 214.06
+      },
+      {
+        "id": "INTENT_010",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.4847,
+        "margin": 0.3387,
+        "latency_ms": 206.96
+      },
+      {
+        "id": "INTENT_011",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.3598,
+        "margin": 0.0933,
+        "latency_ms": 209.16
+      },
+      {
+        "id": "INTENT_012",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.4529,
+        "margin": 0.1174,
+        "latency_ms": 211.23
+      },
+      {
+        "id": "INTENT_013",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.3685,
+        "margin": 0.0955,
+        "latency_ms": 207.04
+      },
+      {
+        "id": "INTENT_014",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.3283,
+        "margin": 0.016,
+        "latency_ms": 210.99
+      },
+      {
+        "id": "INTENT_015",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.4074,
+        "margin": 0.1056,
+        "latency_ms": 210.73
+      },
+      {
+        "id": "INTENT_016",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": false,
+        "confidence": 0.3012,
+        "margin": 0.0546,
+        "latency_ms": 212.6
+      },
+      {
+        "id": "INTENT_017",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.3289,
+        "margin": 0.0852,
+        "latency_ms": 210.2
+      },
+      {
+        "id": "INTENT_018",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.255,
+        "margin": 0.0124,
+        "latency_ms": 208.06
+      },
+      {
+        "id": "INTENT_019",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.3919,
+        "margin": 0.1016,
+        "latency_ms": 205.89
+      },
+      {
+        "id": "INTENT_020",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.531,
+        "margin": 0.2924,
+        "latency_ms": 206.12
+      },
+      {
+        "id": "INTENT_021",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.589,
+        "margin": 0.388,
+        "latency_ms": 206.44
+      },
+      {
+        "id": "INTENT_022",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.5315,
+        "margin": 0.3208,
+        "latency_ms": 212.48
+      },
+      {
+        "id": "INTENT_023",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.4383,
+        "margin": 0.279,
+        "latency_ms": 212.29
+      },
+      {
+        "id": "INTENT_024",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.4425,
+        "margin": 0.2086,
+        "latency_ms": 210.96
+      },
+      {
+        "id": "INTENT_025",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.3742,
+        "margin": 0.1996,
+        "latency_ms": 208.88
+      },
+      {
+        "id": "INTENT_026",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.3783,
+        "margin": 0.1517,
+        "latency_ms": 206.23
+      },
+      {
+        "id": "INTENT_027",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.4452,
+        "margin": 0.2501,
+        "latency_ms": 205.31
+      },
+      {
+        "id": "INTENT_028",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.3266,
+        "margin": 0.0754,
+        "latency_ms": 205.27
+      },
+      {
+        "id": "INTENT_029",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.4206,
+        "margin": 0.2363,
+        "latency_ms": 207.95
+      },
+      {
+        "id": "INTENT_030",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.4233,
+        "margin": 0.1466,
+        "latency_ms": 210.66
+      },
+      {
+        "id": "INTENT_031",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.6539,
+        "margin": 0.4594,
+        "latency_ms": 215.37
+      },
+      {
+        "id": "INTENT_032",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.4821,
+        "margin": 0.2735,
+        "latency_ms": 210.44
+      },
+      {
+        "id": "INTENT_033",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": false,
+        "confidence": 0.3388,
+        "margin": 0.0878,
+        "latency_ms": 204.82
+      },
+      {
+        "id": "INTENT_034",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.602,
+        "margin": 0.3721,
+        "latency_ms": 204.05
+      },
+      {
+        "id": "INTENT_035",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.4092,
+        "margin": 0.1846,
+        "latency_ms": 204.32
+      },
+      {
+        "id": "INTENT_036",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": false,
+        "confidence": 0.4038,
+        "margin": 0.2223,
+        "latency_ms": 203.7
+      },
+      {
+        "id": "INTENT_037",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.25,
+        "margin": 0.0209,
+        "latency_ms": 208.28
+      },
+      {
+        "id": "INTENT_038",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": false,
+        "confidence": 0.2656,
+        "margin": 0.0639,
+        "latency_ms": 211.79
+      },
+      {
+        "id": "INTENT_039",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": false,
+        "confidence": 0.2386,
+        "margin": 0.0059,
+        "latency_ms": 212.41
+      },
+      {
+        "id": "INTENT_040",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.2804,
+        "margin": 0.0565,
+        "latency_ms": 209.04
+      },
+      {
+        "id": "INTENT_041",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.6596,
+        "margin": 0.4843,
+        "latency_ms": 203.84
+      },
+      {
+        "id": "INTENT_042",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.6205,
+        "margin": 0.445,
+        "latency_ms": 204.43
+      },
+      {
+        "id": "INTENT_043",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": false,
+        "confidence": 0.3944,
+        "margin": 0.1199,
+        "latency_ms": 205.29
+      },
+      {
+        "id": "INTENT_044",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.3939,
+        "margin": 0.0506,
+        "latency_ms": 204.22
+      },
+      {
+        "id": "INTENT_045",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.7526,
+        "margin": 0.5968,
+        "latency_ms": 209.63
+      },
+      {
+        "id": "INTENT_046",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.4038,
+        "margin": 0.005,
+        "latency_ms": 212.16
+      },
+      {
+        "id": "INTENT_047",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.4841,
+        "margin": 0.2282,
+        "latency_ms": 209.55
+      },
+      {
+        "id": "INTENT_048",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.611,
+        "margin": 0.3747,
+        "latency_ms": 206.8
+      },
+      {
+        "id": "INTENT_049",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": false,
+        "confidence": 0.3133,
+        "margin": 0.0662,
+        "latency_ms": 204.51
+      },
+      {
+        "id": "INTENT_050",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.4398,
+        "margin": 0.2073,
+        "latency_ms": 204.27
+      }
+    ]
+  },
+  "fine_tuned": {
+    "label": "System Q 2.0 (Fine-Tuned)",
+    "overall_accuracy": 88.0,
+    "scam_accuracy": 88.0,
+    "intent_accuracy": 88.0,
+    "latency_median_ms": 648.06,
+    "records": [
+      {
+        "id": "SCAM_001",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9917,
+        "margin": 0.9835,
+        "latency_ms": 475.49
+      },
+      {
+        "id": "SCAM_002",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 1.0,
+        "latency_ms": 480.89
+      },
+      {
+        "id": "SCAM_003",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9998,
+        "latency_ms": 463.22
+      },
+      {
+        "id": "SCAM_004",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 1.0,
+        "latency_ms": 496.59
+      },
+      {
+        "id": "SCAM_005",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9996,
+        "margin": 0.9991,
+        "latency_ms": 461.09
+      },
+      {
+        "id": "SCAM_006",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 1.0,
+        "latency_ms": 447.64
+      },
+      {
+        "id": "SCAM_007",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.9999,
+        "margin": 0.9998,
+        "latency_ms": 475.5
+      },
+      {
+        "id": "SCAM_008",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.9998,
+        "margin": 0.9997,
+        "latency_ms": 478.6
+      },
+      {
+        "id": "SCAM_009",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9994,
+        "latency_ms": 538.62
+      },
+      {
+        "id": "SCAM_010",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 472.34
+      },
+      {
+        "id": "SCAM_011",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9178,
+        "margin": 0.8356,
+        "latency_ms": 469.01
+      },
+      {
+        "id": "SCAM_012",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 1.0,
+        "latency_ms": 443.94
+      },
+      {
+        "id": "SCAM_013",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9976,
+        "margin": 0.9952,
+        "latency_ms": 565.22
+      },
+      {
+        "id": "SCAM_014",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 495.2
+      },
+      {
+        "id": "SCAM_015",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9994,
+        "latency_ms": 451.55
+      },
+      {
+        "id": "SCAM_016",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.9994,
+        "margin": 0.9988,
+        "latency_ms": 452.03
+      },
+      {
+        "id": "SCAM_017",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.9995,
+        "margin": 0.999,
+        "latency_ms": 482.61
+      },
+      {
+        "id": "SCAM_018",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9999,
+        "latency_ms": 252.28
+      },
+      {
+        "id": "SCAM_019",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9961,
+        "margin": 0.9922,
+        "latency_ms": 222.78
+      },
+      {
+        "id": "SCAM_020",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 443.51
+      },
+      {
+        "id": "SCAM_021",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9997,
+        "latency_ms": 460.18
+      },
+      {
+        "id": "SCAM_022",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 481.97
+      },
+      {
+        "id": "SCAM_023",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9995,
+        "margin": 0.9991,
+        "latency_ms": 447.47
+      },
+      {
+        "id": "SCAM_024",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 1.0,
+        "latency_ms": 444.73
+      },
+      {
+        "id": "SCAM_025",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9999,
+        "latency_ms": 592.29
+      },
+      {
+        "id": "SCAM_026",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.9993,
+        "margin": 0.9986,
+        "latency_ms": 456.76
+      },
+      {
+        "id": "SCAM_027",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9998,
+        "latency_ms": 442.49
+      },
+      {
+        "id": "SCAM_028",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9998,
+        "latency_ms": 480.49
+      },
+      {
+        "id": "SCAM_029",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.988,
+        "margin": 0.976,
+        "latency_ms": 474.79
+      },
+      {
+        "id": "SCAM_030",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 450.5
+      },
+      {
+        "id": "SCAM_031",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9994,
+        "latency_ms": 456.68
+      },
+      {
+        "id": "SCAM_032",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 1.0,
+        "latency_ms": 244.42
+      },
+      {
+        "id": "SCAM_033",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9998,
+        "latency_ms": 474.56
+      },
+      {
+        "id": "SCAM_034",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 1.0,
+        "latency_ms": 444.6
+      },
+      {
+        "id": "SCAM_035",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9994,
+        "latency_ms": 466.54
+      },
+      {
+        "id": "SCAM_036",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 484.13
+      },
+      {
+        "id": "SCAM_037",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9995,
+        "margin": 0.9989,
+        "latency_ms": 563.43
+      },
+      {
+        "id": "SCAM_038",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 449.91
+      },
+      {
+        "id": "SCAM_039",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 489.33
+      },
+      {
+        "id": "SCAM_040",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 457.09
+      },
+      {
+        "id": "SCAM_041",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 451.44
+      },
+      {
+        "id": "SCAM_042",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 1.0,
+        "latency_ms": 241.97
+      },
+      {
+        "id": "SCAM_043",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.9955,
+        "margin": 0.991,
+        "latency_ms": 251.53
+      },
+      {
+        "id": "SCAM_044",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9998,
+        "latency_ms": 473.87
+      },
+      {
+        "id": "SCAM_045",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "SCAM",
+        "is_correct": true,
+        "confidence": 0.9999,
+        "margin": 0.9998,
+        "latency_ms": 451.94
+      },
+      {
+        "id": "SCAM_046",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 459.43
+      },
+      {
+        "id": "SCAM_047",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.9999,
+        "margin": 0.9999,
+        "latency_ms": 489.06
+      },
+      {
+        "id": "SCAM_048",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 1.0,
+        "margin": 0.9999,
+        "latency_ms": 219.68
+      },
+      {
+        "id": "SCAM_049",
+        "domain": "scam_detection",
+        "ground_truth": "SCAM",
+        "prediction": "LEGITIMATE",
+        "is_correct": false,
+        "confidence": 0.9999,
+        "margin": 0.9997,
+        "latency_ms": 456.37
+      },
+      {
+        "id": "SCAM_050",
+        "domain": "scam_detection",
+        "ground_truth": "LEGITIMATE",
+        "prediction": "LEGITIMATE",
+        "is_correct": true,
+        "confidence": 0.9963,
+        "margin": 0.9925,
+        "latency_ms": 472.25
+      },
+      {
+        "id": "INTENT_001",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.9989,
+        "margin": 0.9984,
+        "latency_ms": 1350.56
+      },
+      {
+        "id": "INTENT_002",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": false,
+        "confidence": 0.8677,
+        "margin": 0.7909,
+        "latency_ms": 788.24
+      },
+      {
+        "id": "INTENT_003",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": false,
+        "confidence": 0.9569,
+        "margin": 0.9216,
+        "latency_ms": 722.54
+      },
+      {
+        "id": "INTENT_004",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.9905,
+        "margin": 0.986,
+        "latency_ms": 810.32
+      },
+      {
+        "id": "INTENT_005",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.9592,
+        "margin": 0.9383,
+        "latency_ms": 703.82
+      },
+      {
+        "id": "INTENT_006",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": false,
+        "confidence": 0.9947,
+        "margin": 0.9898,
+        "latency_ms": 752.51
+      },
+      {
+        "id": "INTENT_007",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.9966,
+        "margin": 0.9952,
+        "latency_ms": 737.22
+      },
+      {
+        "id": "INTENT_008",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.9719,
+        "margin": 0.9532,
+        "latency_ms": 753.08
+      },
+      {
+        "id": "INTENT_009",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.9908,
+        "margin": 0.9868,
+        "latency_ms": 800.25
+      },
+      {
+        "id": "INTENT_010",
+        "domain": "intent_classification",
+        "ground_truth": "BILLING",
+        "prediction": "BILLING",
+        "is_correct": true,
+        "confidence": 0.9908,
+        "margin": 0.9853,
+        "latency_ms": 761.28
+      },
+      {
+        "id": "INTENT_011",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9971,
+        "margin": 0.9954,
+        "latency_ms": 810.96
+      },
+      {
+        "id": "INTENT_012",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9982,
+        "margin": 0.9971,
+        "latency_ms": 816.25
+      },
+      {
+        "id": "INTENT_013",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9975,
+        "margin": 0.9961,
+        "latency_ms": 767.63
+      },
+      {
+        "id": "INTENT_014",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9962,
+        "margin": 0.994,
+        "latency_ms": 756.94
+      },
+      {
+        "id": "INTENT_015",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9983,
+        "margin": 0.9973,
+        "latency_ms": 759.64
+      },
+      {
+        "id": "INTENT_016",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9928,
+        "margin": 0.9882,
+        "latency_ms": 770.16
+      },
+      {
+        "id": "INTENT_017",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9964,
+        "margin": 0.9943,
+        "latency_ms": 756.58
+      },
+      {
+        "id": "INTENT_018",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9977,
+        "margin": 0.9965,
+        "latency_ms": 795.53
+      },
+      {
+        "id": "INTENT_019",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.997,
+        "margin": 0.9952,
+        "latency_ms": 777.04
+      },
+      {
+        "id": "INTENT_020",
+        "domain": "intent_classification",
+        "ground_truth": "TECHNICAL_SUPPORT",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": true,
+        "confidence": 0.9981,
+        "margin": 0.997,
+        "latency_ms": 739.65
+      },
+      {
+        "id": "INTENT_021",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.9893,
+        "margin": 0.9817,
+        "latency_ms": 759.89
+      },
+      {
+        "id": "INTENT_022",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.9888,
+        "margin": 0.9797,
+        "latency_ms": 740.49
+      },
+      {
+        "id": "INTENT_023",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.8032,
+        "margin": 0.6348,
+        "latency_ms": 767.05
+      },
+      {
+        "id": "INTENT_024",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.9895,
+        "margin": 0.9815,
+        "latency_ms": 723.29
+      },
+      {
+        "id": "INTENT_025",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.982,
+        "margin": 0.967,
+        "latency_ms": 772.85
+      },
+      {
+        "id": "INTENT_026",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "TECHNICAL_SUPPORT",
+        "is_correct": false,
+        "confidence": 0.6905,
+        "margin": 0.4488,
+        "latency_ms": 746.64
+      },
+      {
+        "id": "INTENT_027",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": false,
+        "confidence": 0.9703,
+        "margin": 0.9457,
+        "latency_ms": 760.33
+      },
+      {
+        "id": "INTENT_028",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.9864,
+        "margin": 0.9761,
+        "latency_ms": 740.06
+      },
+      {
+        "id": "INTENT_029",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_ACCESS",
+        "is_correct": true,
+        "confidence": 0.9822,
+        "margin": 0.9682,
+        "latency_ms": 767.4
+      },
+      {
+        "id": "INTENT_030",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_ACCESS",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": false,
+        "confidence": 0.9996,
+        "margin": 0.9994,
+        "latency_ms": 726.76
+      },
+      {
+        "id": "INTENT_031",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9959,
+        "margin": 0.992,
+        "latency_ms": 753.46
+      },
+      {
+        "id": "INTENT_032",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9971,
+        "margin": 0.9944,
+        "latency_ms": 733.68
+      },
+      {
+        "id": "INTENT_033",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9946,
+        "margin": 0.9897,
+        "latency_ms": 750.69
+      },
+      {
+        "id": "INTENT_034",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9964,
+        "margin": 0.993,
+        "latency_ms": 754.2
+      },
+      {
+        "id": "INTENT_035",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9959,
+        "margin": 0.992,
+        "latency_ms": 729.81
+      },
+      {
+        "id": "INTENT_036",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9713,
+        "margin": 0.9467,
+        "latency_ms": 756.51
+      },
+      {
+        "id": "INTENT_037",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9948,
+        "margin": 0.9898,
+        "latency_ms": 715.17
+      },
+      {
+        "id": "INTENT_038",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9953,
+        "margin": 0.9909,
+        "latency_ms": 765.08
+      },
+      {
+        "id": "INTENT_039",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9946,
+        "margin": 0.9897,
+        "latency_ms": 736.47
+      },
+      {
+        "id": "INTENT_040",
+        "domain": "intent_classification",
+        "ground_truth": "SALES_INQUIRY",
+        "prediction": "SALES_INQUIRY",
+        "is_correct": true,
+        "confidence": 0.9952,
+        "margin": 0.9909,
+        "latency_ms": 767.11
+      },
+      {
+        "id": "INTENT_041",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9998,
+        "margin": 0.9997,
+        "latency_ms": 718.82
+      },
+      {
+        "id": "INTENT_042",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9995,
+        "latency_ms": 766.75
+      },
+      {
+        "id": "INTENT_043",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9992,
+        "margin": 0.9989,
+        "latency_ms": 736.7
+      },
+      {
+        "id": "INTENT_044",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9995,
+        "margin": 0.9993,
+        "latency_ms": 760.86
+      },
+      {
+        "id": "INTENT_045",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9996,
+        "margin": 0.9993,
+        "latency_ms": 732.12
+      },
+      {
+        "id": "INTENT_046",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9988,
+        "margin": 0.9981,
+        "latency_ms": 772.5
+      },
+      {
+        "id": "INTENT_047",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9996,
+        "latency_ms": 729.94
+      },
+      {
+        "id": "INTENT_048",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9995,
+        "latency_ms": 738.04
+      },
+      {
+        "id": "INTENT_049",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9995,
+        "latency_ms": 752.53
+      },
+      {
+        "id": "INTENT_050",
+        "domain": "intent_classification",
+        "ground_truth": "ACCOUNT_CANCELLATION",
+        "prediction": "ACCOUNT_CANCELLATION",
+        "is_correct": true,
+        "confidence": 0.9997,
+        "margin": 0.9996,
+        "latency_ms": 725.78
+      }
+    ]
+  }
+}

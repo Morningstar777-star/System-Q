@@ -1,0 +1,222 @@
+{
+  "model_name": "System_Q_EarlyExit",
+  "is_remote": false,
+  "num_evaluated": 8,
+  "num_errors": 0,
+  "accuracy": 0.5,
+  "per_task_accuracy": {
+    "multiclass": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0
+    },
+    "ranking": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "adversarial": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "abstention": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "ambiguous": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "binary": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5
+    }
+  },
+  "speed": {
+    "cold_start_ms": 106.12,
+    "warm_mean_ms": 106.11,
+    "warm_median_ms": 105.09,
+    "p90_ms": 112.58,
+    "p95_ms": 113.05,
+    "throughput_decisions_per_sec": 9.42
+  },
+  "memory": {
+    "peak_vram_gb": 1.996,
+    "peak_ram_gb": 1.418
+  },
+  "energy": {
+    "measured": true,
+    "duration_s": 0.8508,
+    "sample_count": 34,
+    "power_avg_w": 41.82,
+    "power_peak_w": 43.38,
+    "idle_power_w": 41.83,
+    "energy_joules": 35.5793,
+    "net_energy_joules": 0.0,
+    "energy_mj_per_decision": 4447.41,
+    "wall_time_ms": 850.02,
+    "label": "System_Q_EarlyExit"
+  },
+  "records": [
+    {
+      "example_id": "MC_002",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "TECH_SUPPORT",
+      "is_correct": true,
+      "latency_ms": 106.12,
+      "scores": {
+        "BILLING": 0.0371,
+        "TECH_SUPPORT": 0.6202,
+        "ACCOUNT": 0.1116,
+        "SALES": 0.2311
+      },
+      "error": null,
+      "metadata": {
+        "exit_layer": 36,
+        "layers_executed": 36,
+        "early_exited": false,
+        "exit_confidence": 0.6202
+      }
+    },
+    {
+      "example_id": "RNK_001",
+      "task_type": "ranking",
+      "ground_truth": "OPTION_B",
+      "prediction": "URGENT",
+      "is_correct": false,
+      "latency_ms": 113.52,
+      "scores": {
+        "NON_URGENT": 0.0718,
+        "URGENT": 0.9282
+      },
+      "error": null,
+      "metadata": {
+        "exit_layer": 12,
+        "layers_executed": 12,
+        "early_exited": true,
+        "exit_confidence": 0.9282
+      }
+    },
+    {
+      "example_id": "ADV_002",
+      "task_type": "adversarial",
+      "ground_truth": "URGENT",
+      "prediction": "URGENT",
+      "is_correct": true,
+      "latency_ms": 109.92,
+      "scores": {
+        "NON_URGENT": 0.1428,
+        "URGENT": 0.8572
+      },
+      "error": null,
+      "metadata": {
+        "exit_layer": 12,
+        "layers_executed": 12,
+        "early_exited": true,
+        "exit_confidence": 0.8572
+      }
+    },
+    {
+      "example_id": "ABS_002",
+      "task_type": "abstention",
+      "ground_truth": "CONFIDENT",
+      "prediction": "URGENT",
+      "is_correct": false,
+      "latency_ms": 102.48,
+      "scores": {
+        "NON_URGENT": 0.1388,
+        "URGENT": 0.8612
+      },
+      "error": null,
+      "metadata": {
+        "exit_layer": 36,
+        "layers_executed": 36,
+        "early_exited": false,
+        "exit_confidence": 0.8612
+      }
+    },
+    {
+      "example_id": "MC_006",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "TECH_SUPPORT",
+      "is_correct": true,
+      "latency_ms": 112.18,
+      "scores": {
+        "BILLING": 0.0191,
+        "TECH_SUPPORT": 0.6799,
+        "ACCOUNT": 0.1303,
+        "SALES": 0.1707
+      },
+      "error": null,
+      "metadata": {
+        "exit_layer": 36,
+        "layers_executed": 36,
+        "early_exited": false,
+        "exit_confidence": 0.6799
+      }
+    },
+    {
+      "example_id": "AMB_002",
+      "task_type": "ambiguous",
+      "ground_truth": "RESOLVABLE",
+      "prediction": "URGENT",
+      "is_correct": false,
+      "latency_ms": 104.07,
+      "scores": {
+        "NON_URGENT": 0.1348,
+        "URGENT": 0.8652
+      },
+      "error": null,
+      "metadata": {
+        "exit_layer": 36,
+        "layers_executed": 36,
+        "early_exited": false,
+        "exit_confidence": 0.8652
+      }
+    },
+    {
+      "example_id": "BIN_001",
+      "task_type": "binary",
+      "ground_truth": "URGENT",
+      "prediction": "URGENT",
+      "is_correct": true,
+      "latency_ms": 102.45,
+      "scores": {
+        "NON_URGENT": 0.1392,
+        "URGENT": 0.8608
+      },
+      "error": null,
+      "metadata": {
+        "exit_layer": 36,
+        "layers_executed": 36,
+        "early_exited": false,
+        "exit_confidence": 0.8608
+      }
+    },
+    {
+      "example_id": "BIN_002",
+      "task_type": "binary",
+      "ground_truth": "NON_URGENT",
+      "prediction": "URGENT",
+      "is_correct": false,
+      "latency_ms": 98.18,
+      "scores": {
+        "NON_URGENT": 0.1473,
+        "URGENT": 0.8527
+      },
+      "error": null,
+      "metadata": {
+        "exit_layer": 12,
+        "layers_executed": 12,
+        "early_exited": true,
+        "exit_confidence": 0.8527
+      }
+    }
+  ]
+}

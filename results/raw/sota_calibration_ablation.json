@@ -1,0 +1,50 @@
+[
+  {
+    "config": {
+      "name": "No Calibration (Raw Fine-Tuned Logits)",
+      "enable_null": false,
+      "gamma": 0.0,
+      "temp": 1.0
+    },
+    "overall_accuracy": 73.0,
+    "scam_accuracy": 62.0,
+    "intent_accuracy": 84.0,
+    "median_lat_ms": 204.71
+  },
+  {
+    "config": {
+      "name": "Null Calib gamma=0.10",
+      "enable_null": true,
+      "gamma": 0.1,
+      "temp": 1.0
+    },
+    "overall_accuracy": 73.0,
+    "scam_accuracy": 62.0,
+    "intent_accuracy": 84.0,
+    "median_lat_ms": 205.64
+  },
+  {
+    "config": {
+      "name": "Null Calib gamma=0.20 (Current)",
+      "enable_null": true,
+      "gamma": 0.2,
+      "temp": 1.0
+    },
+    "overall_accuracy": 77.0,
+    "scam_accuracy": 70.0,
+    "intent_accuracy": 84.0,
+    "median_lat_ms": 216.41
+  },
+  {
+    "config": {
+      "name": "Temperature=0.5 (Sharper decisions)",
+      "enable_null": false,
+      "gamma": 0.0,
+      "temp": 0.5
+    },
+    "overall_accuracy": 73.0,
+    "scam_accuracy": 62.0,
+    "intent_accuracy": 84.0,
+    "median_lat_ms": 222.0
+  }
+]

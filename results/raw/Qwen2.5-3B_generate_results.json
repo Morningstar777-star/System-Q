@@ -1,0 +1,207 @@
+{
+  "model_name": "Qwen2.5-3B_generate",
+  "is_remote": false,
+  "num_evaluated": 8,
+  "num_errors": 0,
+  "accuracy": 0.5,
+  "per_task_accuracy": {
+    "multiclass": {
+      "correct": 0,
+      "total": 2,
+      "accuracy": 0.0
+    },
+    "ranking": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "adversarial": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "abstention": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "ambiguous": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "binary": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5
+    }
+  },
+  "speed": {
+    "cold_start_ms": 411.31,
+    "warm_mean_ms": 380.36,
+    "warm_median_ms": 402.74,
+    "p90_ms": 432.67,
+    "p95_ms": 457.58,
+    "throughput_decisions_per_sec": 2.63
+  },
+  "memory": {
+    "peak_vram_gb": 1.939,
+    "peak_ram_gb": 1.436
+  },
+  "energy": {
+    "measured": true,
+    "duration_s": 3.0362,
+    "sample_count": 119,
+    "power_avg_w": 32.7,
+    "power_peak_w": 49.04,
+    "idle_power_w": 9.73,
+    "energy_joules": 99.2715,
+    "net_energy_joules": 69.7169,
+    "energy_mj_per_decision": 12408.94,
+    "wall_time_ms": 3045.71,
+    "label": "Qwen2.5-3B_generate"
+  },
+  "records": [
+    {
+      "example_id": "MC_002",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "BILLING",
+      "is_correct": false,
+      "latency_ms": 411.31,
+      "scores": {
+        "BILLING": 1.0,
+        "TECH_SUPPORT": 0.0,
+        "ACCOUNT": 0.0,
+        "SALES": 0.0
+      },
+      "error": null,
+      "metadata": {
+        "mode": "generate",
+        "generated_tokens": 4
+      }
+    },
+    {
+      "example_id": "RNK_001",
+      "task_type": "ranking",
+      "ground_truth": "OPTION_B",
+      "prediction": "OPTION_B",
+      "is_correct": true,
+      "latency_ms": 318.68,
+      "scores": {
+        "OPTION_A": 0.0,
+        "OPTION_B": 1.0,
+        "OPTION_C": 0.0
+      },
+      "error": null,
+      "metadata": {
+        "mode": "generate",
+        "generated_tokens": 3
+      }
+    },
+    {
+      "example_id": "ADV_002",
+      "task_type": "adversarial",
+      "ground_truth": "URGENT",
+      "prediction": "NON_URGENT",
+      "is_correct": false,
+      "latency_ms": 402.53,
+      "scores": {
+        "NON_URGENT": 1.0,
+        "URGENT": 0.0
+      },
+      "error": null,
+      "metadata": {
+        "mode": "generate",
+        "generated_tokens": 4
+      }
+    },
+    {
+      "example_id": "ABS_002",
+      "task_type": "abstention",
+      "ground_truth": "CONFIDENT",
+      "prediction": "CONFIDENT",
+      "is_correct": true,
+      "latency_ms": 310.13,
+      "scores": {
+        "CONFIDENT": 1.0,
+        "ABSTAIN": 0.0
+      },
+      "error": null,
+      "metadata": {
+        "mode": "generate",
+        "generated_tokens": 3
+      }
+    },
+    {
+      "example_id": "MC_006",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "BILLING",
+      "is_correct": false,
+      "latency_ms": 307.65,
+      "scores": {
+        "BILLING": 1.0,
+        "TECH_SUPPORT": 0.0,
+        "ACCOUNT": 0.0,
+        "SALES": 0.0
+      },
+      "error": null,
+      "metadata": {
+        "mode": "generate",
+        "generated_tokens": 3
+      }
+    },
+    {
+      "example_id": "AMB_002",
+      "task_type": "ambiguous",
+      "ground_truth": "RESOLVABLE",
+      "prediction": "RESOLVABLE",
+      "is_correct": true,
+      "latency_ms": 402.94,
+      "scores": {
+        "UNCERTAIN": 0.0,
+        "RESOLVABLE": 1.0
+      },
+      "error": null,
+      "metadata": {
+        "mode": "generate",
+        "generated_tokens": 4
+      }
+    },
+    {
+      "example_id": "BIN_001",
+      "task_type": "binary",
+      "ground_truth": "URGENT",
+      "prediction": "NON_URGENT",
+      "is_correct": false,
+      "latency_ms": 407.12,
+      "scores": {
+        "NON_URGENT": 1.0,
+        "URGENT": 0.0
+      },
+      "error": null,
+      "metadata": {
+        "mode": "generate",
+        "generated_tokens": 4
+      }
+    },
+    {
+      "example_id": "BIN_002",
+      "task_type": "binary",
+      "ground_truth": "NON_URGENT",
+      "prediction": "NON_URGENT",
+      "is_correct": true,
+      "latency_ms": 482.5,
+      "scores": {
+        "NON_URGENT": 1.0,
+        "URGENT": 0.0
+      },
+      "error": null,
+      "metadata": {
+        "mode": "generate",
+        "generated_tokens": 4
+      }
+    }
+  ]
+}

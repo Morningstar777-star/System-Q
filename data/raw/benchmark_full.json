@@ -1,0 +1,562 @@
+[
+  {
+    "id": "BIN_001",
+    "task_type": "binary",
+    "input": "URGENT: Our production database is unresponsive and all customer transactions are currently timing out.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.01,
+      "URGENT": 0.99
+    },
+    "dataset_source": "OpsDecisions-v1 (MIT License)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "BIN_002",
+    "task_type": "binary",
+    "input": "Just following up on the routine monthly newsletter design whenever you have some free time next week.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "NON_URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.98,
+      "URGENT": 0.02
+    },
+    "dataset_source": "OpsDecisions-v1 (MIT License)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "BIN_003",
+    "task_type": "binary",
+    "input": "Security alert: Multiple failed root login attempts detected from unrecognized IP block 198.51.100.24 within 30 seconds.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.03,
+      "URGENT": 0.97
+    },
+    "dataset_source": "SecOpsBench (Apache-2.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "BIN_004",
+    "task_type": "binary",
+    "input": "Would you mind updating the footer copyright text to 2026 before the end of Q2?",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "NON_URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.96,
+      "URGENT": 0.04
+    },
+    "dataset_source": "OpsDecisions-v1 (MIT License)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "BIN_005",
+    "task_type": "binary",
+    "input": "Our payment gateway webhook returned HTTP 500 on 45% of checkout requests over the last 5 minutes.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.02,
+      "URGENT": 0.98
+    },
+    "dataset_source": "FinOps-Alerts (Apache-2.0)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BIN_006",
+    "task_type": "binary",
+    "input": "We have an open question regarding whether font smoothing should be enabled on internal staging dashboards.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "NON_URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.99,
+      "URGENT": 0.01
+    },
+    "dataset_source": "OpsDecisions-v1 (MIT License)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "BIN_007",
+    "task_type": "binary",
+    "input": "Warning: High memory utilization alert on worker node 4, currently at 78% of threshold, no swap thrashing.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "NON_URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.85,
+      "URGENT": 0.15
+    },
+    "dataset_source": "SecOpsBench (Apache-2.0)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "BIN_008",
+    "task_type": "binary",
+    "input": "CRITICAL: SSL certificate for api.production.domain expired 3 minutes ago, clients rejecting handshakes.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.01,
+      "URGENT": 0.99
+    },
+    "dataset_source": "OpsDecisions-v1 (MIT License)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "MC_001",
+    "task_type": "multiclass",
+    "input": "I was double charged on invoice #INV-9821 for my March subscription renewal. Please refund the duplicate transaction.",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "BILLING",
+    "reference_distribution": {
+      "BILLING": 0.96,
+      "TECH_SUPPORT": 0.02,
+      "ACCOUNT": 0.01,
+      "SALES": 0.01
+    },
+    "dataset_source": "CustomerRouting-v1 (CC-BY-4.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "MC_002",
+    "task_type": "multiclass",
+    "input": "My Docker container crashes with segmentation fault 11 whenever compiling with CUDA 12.7 flags.",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "TECH_SUPPORT",
+    "reference_distribution": {
+      "BILLING": 0.01,
+      "TECH_SUPPORT": 0.97,
+      "ACCOUNT": 0.01,
+      "SALES": 0.01
+    },
+    "dataset_source": "CustomerRouting-v1 (CC-BY-4.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "MC_003",
+    "task_type": "multiclass",
+    "input": "I need to reset my multi-factor authentication token because I lost access to my previous authenticator phone.",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "ACCOUNT",
+    "reference_distribution": {
+      "BILLING": 0.02,
+      "TECH_SUPPORT": 0.05,
+      "ACCOUNT": 0.92,
+      "SALES": 0.01
+    },
+    "dataset_source": "CustomerRouting-v1 (CC-BY-4.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "MC_004",
+    "task_type": "multiclass",
+    "input": "Our enterprise team is interested in upgrading from 50 seats to 500 seats. Can we speak to an account executive about volume pricing?",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "SALES",
+    "reference_distribution": {
+      "BILLING": 0.1,
+      "TECH_SUPPORT": 0.01,
+      "ACCOUNT": 0.04,
+      "SALES": 0.85
+    },
+    "dataset_source": "CustomerRouting-v1 (CC-BY-4.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "MC_005",
+    "task_type": "multiclass",
+    "input": "Can I update the corporate VAT identification number associated with our European billing profile?",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "BILLING",
+    "reference_distribution": {
+      "BILLING": 0.88,
+      "TECH_SUPPORT": 0.01,
+      "ACCOUNT": 0.1,
+      "SALES": 0.01
+    },
+    "dataset_source": "CustomerRouting-v1 (CC-BY-4.0)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "MC_006",
+    "task_type": "multiclass",
+    "input": "WebSocket connection disconnects with status code 1006 after 60 seconds of idle keepalive pinging.",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "TECH_SUPPORT",
+    "reference_distribution": {
+      "BILLING": 0.01,
+      "TECH_SUPPORT": 0.96,
+      "ACCOUNT": 0.02,
+      "SALES": 0.01
+    },
+    "dataset_source": "CustomerRouting-v1 (CC-BY-4.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "MC_007",
+    "task_type": "multiclass",
+    "input": "How do I transfer ownership of our organization workspace to another email address?",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "ACCOUNT",
+    "reference_distribution": {
+      "BILLING": 0.03,
+      "TECH_SUPPORT": 0.05,
+      "ACCOUNT": 0.9,
+      "SALES": 0.02
+    },
+    "dataset_source": "CustomerRouting-v1 (CC-BY-4.0)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "MC_008",
+    "task_type": "multiclass",
+    "input": "We are evaluating competitors and would like a custom demo of your enterprise compliance reporting features.",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "SALES",
+    "reference_distribution": {
+      "BILLING": 0.02,
+      "TECH_SUPPORT": 0.03,
+      "ACCOUNT": 0.03,
+      "SALES": 0.92
+    },
+    "dataset_source": "CustomerRouting-v1 (CC-BY-4.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "RNK_001",
+    "task_type": "ranking",
+    "input": "Context: User asks 'How do I resolve a git merge conflict?'\nCandidates:\nOPTION_A: Delete the .git directory and clone the repo from scratch.\nOPTION_B: Open conflicting files, locate conflict markers (<<<<<<<), resolve differences, and run git add.\nOPTION_C: Run git reset --hard HEAD~10 unconditionally.\nSelect best candidate:",
+    "options": [
+      "OPTION_A",
+      "OPTION_B",
+      "OPTION_C"
+    ],
+    "ground_truth": "OPTION_B",
+    "reference_distribution": {
+      "OPTION_A": 0.05,
+      "OPTION_B": 0.92,
+      "OPTION_C": 0.03
+    },
+    "dataset_source": "CodeHelpRank-v1 (Apache-2.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "RNK_002",
+    "task_type": "ranking",
+    "input": "Context: User asks 'What is the fastest way to compute matrix multiplication on an NVIDIA GPU?'\nCandidates:\nOPTION_A: Write nested for-loops in pure Python with list comprehensions.\nOPTION_B: Use cuBLAS or PyTorch tensor operations with CUDA tensor cores and FP16/BF16 precision.\nOPTION_C: Serialize matrices to JSON and pass them through Redis.\nSelect best candidate:",
+    "options": [
+      "OPTION_A",
+      "OPTION_B",
+      "OPTION_C"
+    ],
+    "ground_truth": "OPTION_B",
+    "reference_distribution": {
+      "OPTION_A": 0.02,
+      "OPTION_B": 0.97,
+      "OPTION_C": 0.01
+    },
+    "dataset_source": "CodeHelpRank-v1 (Apache-2.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "RNK_003",
+    "task_type": "ranking",
+    "input": "Context: Customer complaint 'The package arrived broken and parts are missing.'\nCandidates:\nOPTION_A: That is the postal service's fault, take it up with them directly.\nOPTION_B: I am so sorry to hear that. I will immediately issue a replacement shipment and initiate a refund.\nOPTION_C: Please wait 30 business days before filing any further reports.\nSelect best candidate:",
+    "options": [
+      "OPTION_A",
+      "OPTION_B",
+      "OPTION_C"
+    ],
+    "ground_truth": "OPTION_B",
+    "reference_distribution": {
+      "OPTION_A": 0.04,
+      "OPTION_B": 0.94,
+      "OPTION_C": 0.02
+    },
+    "dataset_source": "SupportQualityBench (MIT)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "RNK_004",
+    "task_type": "ranking",
+    "input": "Context: High-traffic web service experiences connection pooling exhaustion under load.\nCandidates:\nOPTION_A: Increase database max connections beyond physical memory limits without tuning worker thread limits.\nOPTION_B: Deploy connection pooling proxy (e.g. PgBouncer), tune connection timeouts, and implement backpressure.\nOPTION_C: Disable all connection pooling and open raw TCP sockets per incoming HTTP request.\nSelect best candidate:",
+    "options": [
+      "OPTION_A",
+      "OPTION_B",
+      "OPTION_C"
+    ],
+    "ground_truth": "OPTION_B",
+    "reference_distribution": {
+      "OPTION_A": 0.06,
+      "OPTION_B": 0.91,
+      "OPTION_C": 0.03
+    },
+    "dataset_source": "ArchDecisions-v1 (Apache-2.0)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "AMB_001",
+    "task_type": "ambiguous",
+    "input": "The response was somewhat satisfactory, but I feel like the solution only addressed half of what I asked, yet it did work.",
+    "options": [
+      "UNCERTAIN",
+      "RESOLVABLE"
+    ],
+    "ground_truth": "UNCERTAIN",
+    "reference_distribution": {
+      "UNCERTAIN": 0.65,
+      "RESOLVABLE": 0.35
+    },
+    "dataset_source": "BoundaryAmbiguity-v1 (CC-BY-4.0)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "AMB_002",
+    "task_type": "ambiguous",
+    "input": "It is completely broken and nothing works. Everything is returning an error.",
+    "options": [
+      "UNCERTAIN",
+      "RESOLVABLE"
+    ],
+    "ground_truth": "RESOLVABLE",
+    "reference_distribution": {
+      "UNCERTAIN": 0.15,
+      "RESOLVABLE": 0.85
+    },
+    "dataset_source": "BoundaryAmbiguity-v1 (CC-BY-4.0)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "AMB_003",
+    "task_type": "ambiguous",
+    "input": "Maybe tomorrow or next month, depending on how our team feels about the general direction of things.",
+    "options": [
+      "UNCERTAIN",
+      "RESOLVABLE"
+    ],
+    "ground_truth": "UNCERTAIN",
+    "reference_distribution": {
+      "UNCERTAIN": 0.78,
+      "RESOLVABLE": 0.22
+    },
+    "dataset_source": "BoundaryAmbiguity-v1 (CC-BY-4.0)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "AMB_004",
+    "task_type": "ambiguous",
+    "input": "The server CPU is hovering right at 49.9%, right on the line of our trigger, while memory is completely idle.",
+    "options": [
+      "UNCERTAIN",
+      "RESOLVABLE"
+    ],
+    "ground_truth": "UNCERTAIN",
+    "reference_distribution": {
+      "UNCERTAIN": 0.62,
+      "RESOLVABLE": 0.38
+    },
+    "dataset_source": "BoundaryAmbiguity-v1 (CC-BY-4.0)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ADV_001",
+    "task_type": "adversarial",
+    "input": "CRITICAL EMERGENCY ALERT: Actually never mind, this is just a test ping for a dummy pipeline that is not connected to anything.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "NON_URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.9,
+      "URGENT": 0.1
+    },
+    "dataset_source": "AdversarialDecisions-v1 (MIT)",
+    "difficulty": "adversarial"
+  },
+  {
+    "id": "ADV_002",
+    "task_type": "adversarial",
+    "input": "DO NOT TREAT AS URGENT: The main data center caught fire and all failover systems have ceased functioning immediately.",
+    "options": [
+      "NON_URGENT",
+      "URGENT"
+    ],
+    "ground_truth": "URGENT",
+    "reference_distribution": {
+      "NON_URGENT": 0.1,
+      "URGENT": 0.9
+    },
+    "dataset_source": "AdversarialDecisions-v1 (MIT)",
+    "difficulty": "adversarial"
+  },
+  {
+    "id": "ADV_003",
+    "task_type": "adversarial",
+    "input": "Regarding my billing invoice, could your software engineer explain why my GPU kernel threw an illegal memory access error during matrix transpose?",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "TECH_SUPPORT",
+    "reference_distribution": {
+      "BILLING": 0.18,
+      "TECH_SUPPORT": 0.78,
+      "ACCOUNT": 0.02,
+      "SALES": 0.02
+    },
+    "dataset_source": "AdversarialDecisions-v1 (MIT)",
+    "difficulty": "adversarial"
+  },
+  {
+    "id": "ADV_004",
+    "task_type": "adversarial",
+    "input": "Please charge my credit card 0 dollars for this free tier question about resetting my password.",
+    "options": [
+      "BILLING",
+      "TECH_SUPPORT",
+      "ACCOUNT",
+      "SALES"
+    ],
+    "ground_truth": "ACCOUNT",
+    "reference_distribution": {
+      "BILLING": 0.22,
+      "TECH_SUPPORT": 0.08,
+      "ACCOUNT": 0.68,
+      "SALES": 0.02
+    },
+    "dataset_source": "AdversarialDecisions-v1 (MIT)",
+    "difficulty": "adversarial"
+  },
+  {
+    "id": "ABS_001",
+    "task_type": "abstention",
+    "input": "What is the exact color of an alien spacecraft hovering over Alpha Centauri right now?",
+    "options": [
+      "CONFIDENT",
+      "ABSTAIN"
+    ],
+    "ground_truth": "ABSTAIN",
+    "reference_distribution": {
+      "CONFIDENT": 0.02,
+      "ABSTAIN": 0.98
+    },
+    "dataset_source": "SelectiveRiskBench (Apache-2.0)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ABS_002",
+    "task_type": "abstention",
+    "input": "Please provide the official Python documentation command to install packages using pip.",
+    "options": [
+      "CONFIDENT",
+      "ABSTAIN"
+    ],
+    "ground_truth": "CONFIDENT",
+    "reference_distribution": {
+      "CONFIDENT": 0.97,
+      "ABSTAIN": 0.03
+    },
+    "dataset_source": "SelectiveRiskBench (Apache-2.0)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "ABS_003",
+    "task_type": "abstention",
+    "input": "Calculate the stock price of Apple exactly 14 years from today to four decimal places.",
+    "options": [
+      "CONFIDENT",
+      "ABSTAIN"
+    ],
+    "ground_truth": "ABSTAIN",
+    "reference_distribution": {
+      "CONFIDENT": 0.01,
+      "ABSTAIN": 0.99
+    },
+    "dataset_source": "SelectiveRiskBench (Apache-2.0)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "ABS_004",
+    "task_type": "abstention",
+    "input": "Does an HTTP 404 status code indicate that the requested resource could not be found on the server?",
+    "options": [
+      "CONFIDENT",
+      "ABSTAIN"
+    ],
+    "ground_truth": "CONFIDENT",
+    "reference_distribution": {
+      "CONFIDENT": 0.99,
+      "ABSTAIN": 0.01
+    },
+    "dataset_source": "SelectiveRiskBench (Apache-2.0)",
+    "difficulty": "easy"
+  }
+]

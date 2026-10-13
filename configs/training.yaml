@@ -1,0 +1,47 @@
+training:
+  seed: 42
+  max_seq_length: 512
+  epochs: 5
+  batch_size: 4
+  gradient_accumulation_steps: 2
+  learning_rate: 1.0e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.05
+  logging_steps: 10
+  eval_steps: 50
+  save_steps: 100
+  mixed_precision: "fp16" # "fp16", "bf16", "no"
+  gradient_checkpointing: false
+  early_stopping_patience: 3
+
+stages:
+  stage_1_head_only:
+    freeze_backbone: true
+    use_lora: false
+    learning_rate: 5.0e-4
+    epochs: 5
+
+  stage_2_lora:
+    freeze_backbone: true
+    use_lora: true
+    learning_rate: 1.0e-4
+    epochs: 3
+    lora:
+      r: 16
+      lora_alpha: 32
+      target_modules: ["q_proj", "v_proj", "k_proj", "o_proj"]
+      lora_dropout: 0.05
+      bias: "none"
+
+  stage_3_early_exit:
+    train_intermediate_heads: true
+    exit_layers: [12, 24, 36]
+    joint_loss_weights: [0.2, 0.3, 0.5]
+    learning_rate: 2.0e-4
+    epochs: 3
+
+distillation:
+  enabled: true
+  temperature: 2.0
+  alpha_teacher: 0.4
+  alpha_ground_truth: 0.6

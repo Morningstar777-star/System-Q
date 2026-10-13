@@ -1,0 +1,207 @@
+{
+  "model_name": "Qwen2.5-3B_direct_score",
+  "is_remote": false,
+  "num_evaluated": 8,
+  "num_errors": 0,
+  "accuracy": 0.75,
+  "per_task_accuracy": {
+    "multiclass": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0
+    },
+    "ranking": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "adversarial": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "abstention": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "ambiguous": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "binary": {
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5
+    }
+  },
+  "speed": {
+    "cold_start_ms": 123.68,
+    "warm_mean_ms": 138.14,
+    "warm_median_ms": 132.31,
+    "p90_ms": 160.74,
+    "p95_ms": 166.8,
+    "throughput_decisions_per_sec": 7.24
+  },
+  "memory": {
+    "peak_vram_gb": 1.955,
+    "peak_ram_gb": 1.382
+  },
+  "energy": {
+    "measured": true,
+    "duration_s": 1.0905,
+    "sample_count": 43,
+    "power_avg_w": 41.21,
+    "power_peak_w": 44.92,
+    "idle_power_w": 38.68,
+    "energy_joules": 44.9408,
+    "net_energy_joules": 2.7619,
+    "energy_mj_per_decision": 5617.6,
+    "wall_time_ms": 1107.28,
+    "label": "Qwen2.5-3B_direct_score"
+  },
+  "records": [
+    {
+      "example_id": "MC_002",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "TECH_SUPPORT",
+      "is_correct": true,
+      "latency_ms": 123.68,
+      "scores": {
+        "BILLING": 0.2233,
+        "TECH_SUPPORT": 0.5357,
+        "ACCOUNT": 0.1355,
+        "SALES": 0.1055
+      },
+      "error": null,
+      "metadata": {
+        "mode": "direct_score",
+        "generated_tokens": 0
+      }
+    },
+    {
+      "example_id": "RNK_001",
+      "task_type": "ranking",
+      "ground_truth": "OPTION_B",
+      "prediction": "OPTION_A",
+      "is_correct": false,
+      "latency_ms": 172.86,
+      "scores": {
+        "OPTION_A": 0.3333,
+        "OPTION_B": 0.3333,
+        "OPTION_C": 0.3333
+      },
+      "error": null,
+      "metadata": {
+        "mode": "direct_score",
+        "generated_tokens": 0
+      }
+    },
+    {
+      "example_id": "ADV_002",
+      "task_type": "adversarial",
+      "ground_truth": "URGENT",
+      "prediction": "URGENT",
+      "is_correct": true,
+      "latency_ms": 135.81,
+      "scores": {
+        "NON_URGENT": 0.2227,
+        "URGENT": 0.7773
+      },
+      "error": null,
+      "metadata": {
+        "mode": "direct_score",
+        "generated_tokens": 0
+      }
+    },
+    {
+      "example_id": "ABS_002",
+      "task_type": "abstention",
+      "ground_truth": "CONFIDENT",
+      "prediction": "CONFIDENT",
+      "is_correct": true,
+      "latency_ms": 125.98,
+      "scores": {
+        "CONFIDENT": 0.7311,
+        "ABSTAIN": 0.2689
+      },
+      "error": null,
+      "metadata": {
+        "mode": "direct_score",
+        "generated_tokens": 0
+      }
+    },
+    {
+      "example_id": "MC_006",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "TECH_SUPPORT",
+      "is_correct": true,
+      "latency_ms": 155.55,
+      "scores": {
+        "BILLING": 0.2114,
+        "TECH_SUPPORT": 0.5747,
+        "ACCOUNT": 0.1453,
+        "SALES": 0.0686
+      },
+      "error": null,
+      "metadata": {
+        "mode": "direct_score",
+        "generated_tokens": 0
+      }
+    },
+    {
+      "example_id": "AMB_002",
+      "task_type": "ambiguous",
+      "ground_truth": "RESOLVABLE",
+      "prediction": "RESOLVABLE",
+      "is_correct": true,
+      "latency_ms": 128.81,
+      "scores": {
+        "UNCERTAIN": 0.0759,
+        "RESOLVABLE": 0.9241
+      },
+      "error": null,
+      "metadata": {
+        "mode": "direct_score",
+        "generated_tokens": 0
+      }
+    },
+    {
+      "example_id": "BIN_001",
+      "task_type": "binary",
+      "ground_truth": "URGENT",
+      "prediction": "URGENT",
+      "is_correct": true,
+      "latency_ms": 139.65,
+      "scores": {
+        "NON_URGENT": 0.0067,
+        "URGENT": 0.9933
+      },
+      "error": null,
+      "metadata": {
+        "mode": "direct_score",
+        "generated_tokens": 0
+      }
+    },
+    {
+      "example_id": "BIN_002",
+      "task_type": "binary",
+      "ground_truth": "NON_URGENT",
+      "prediction": "URGENT",
+      "is_correct": false,
+      "latency_ms": 122.77,
+      "scores": {
+        "NON_URGENT": 0.4073,
+        "URGENT": 0.5927
+      },
+      "error": null,
+      "metadata": {
+        "mode": "direct_score",
+        "generated_tokens": 0
+      }
+    }
+  ]
+}

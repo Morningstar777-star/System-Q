@@ -1,0 +1,207 @@
+{
+  "model_name": "Laya_Local",
+  "is_remote": false,
+  "num_evaluated": 8,
+  "num_errors": 0,
+  "accuracy": 0.75,
+  "per_task_accuracy": {
+    "multiclass": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0
+    },
+    "ranking": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "adversarial": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "abstention": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "ambiguous": {
+      "correct": 0,
+      "total": 1,
+      "accuracy": 0.0
+    },
+    "binary": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0
+    }
+  },
+  "speed": {
+    "cold_start_ms": 234.24,
+    "warm_mean_ms": 193.85,
+    "warm_median_ms": 182.28,
+    "p90_ms": 228.49,
+    "p95_ms": 231.36,
+    "throughput_decisions_per_sec": 5.16
+  },
+  "memory": {
+    "peak_vram_gb": 4.232,
+    "peak_ram_gb": 3.034
+  },
+  "energy": {
+    "measured": true,
+    "duration_s": 1.5426,
+    "sample_count": 60,
+    "power_avg_w": 29.02,
+    "power_peak_w": 34.74,
+    "idle_power_w": 16.56,
+    "energy_joules": 44.7715,
+    "net_energy_joules": 19.2284,
+    "energy_mj_per_decision": 5596.43,
+    "wall_time_ms": 1551.97,
+    "label": "Laya_Local"
+  },
+  "records": [
+    {
+      "example_id": "MC_002",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "TECH_SUPPORT",
+      "is_correct": true,
+      "latency_ms": 234.24,
+      "scores": {
+        "BILLING": 0.1007,
+        "TECH_SUPPORT": 0.5225,
+        "ACCOUNT": 0.1423,
+        "SALES": 0.2345
+      },
+      "error": null,
+      "metadata": {
+        "confidence": 0.1431,
+        "model": "laya-rl-agent"
+      }
+    },
+    {
+      "example_id": "RNK_001",
+      "task_type": "ranking",
+      "ground_truth": "OPTION_B",
+      "prediction": "OPTION_B",
+      "is_correct": true,
+      "latency_ms": 226.02,
+      "scores": {
+        "OPTION_A": 0.1461,
+        "OPTION_B": 0.43,
+        "OPTION_C": 0.4239
+      },
+      "error": null,
+      "metadata": {
+        "confidence": 0.0827,
+        "model": "laya-rl-agent"
+      }
+    },
+    {
+      "example_id": "ADV_002",
+      "task_type": "adversarial",
+      "ground_truth": "URGENT",
+      "prediction": "URGENT",
+      "is_correct": true,
+      "latency_ms": 181.06,
+      "scores": {
+        "NON_URGENT": 0.0352,
+        "URGENT": 0.9648
+      },
+      "error": null,
+      "metadata": {
+        "confidence": 0.7802,
+        "model": "laya-rl-agent"
+      }
+    },
+    {
+      "example_id": "ABS_002",
+      "task_type": "abstention",
+      "ground_truth": "CONFIDENT",
+      "prediction": "ABSTAIN",
+      "is_correct": false,
+      "latency_ms": 182.3,
+      "scores": {
+        "CONFIDENT": 0.3785,
+        "ABSTAIN": 0.6215
+      },
+      "error": null,
+      "metadata": {
+        "confidence": 0.043,
+        "model": "laya-rl-agent"
+      }
+    },
+    {
+      "example_id": "MC_006",
+      "task_type": "multiclass",
+      "ground_truth": "TECH_SUPPORT",
+      "prediction": "TECH_SUPPORT",
+      "is_correct": true,
+      "latency_ms": 186.03,
+      "scores": {
+        "BILLING": 0.0303,
+        "TECH_SUPPORT": 0.868,
+        "ACCOUNT": 0.0406,
+        "SALES": 0.0611
+      },
+      "error": null,
+      "metadata": {
+        "confidence": 0.618,
+        "model": "laya-rl-agent"
+      }
+    },
+    {
+      "example_id": "AMB_002",
+      "task_type": "ambiguous",
+      "ground_truth": "RESOLVABLE",
+      "prediction": "UNCERTAIN",
+      "is_correct": false,
+      "latency_ms": 179.44,
+      "scores": {
+        "UNCERTAIN": 0.9621,
+        "RESOLVABLE": 0.0379
+      },
+      "error": null,
+      "metadata": {
+        "confidence": 0.7673,
+        "model": "laya-rl-agent"
+      }
+    },
+    {
+      "example_id": "BIN_001",
+      "task_type": "binary",
+      "ground_truth": "URGENT",
+      "prediction": "URGENT",
+      "is_correct": true,
+      "latency_ms": 179.42,
+      "scores": {
+        "NON_URGENT": 0.0681,
+        "URGENT": 0.9319
+      },
+      "error": null,
+      "metadata": {
+        "confidence": 0.6413,
+        "model": "laya-rl-agent"
+      }
+    },
+    {
+      "example_id": "BIN_002",
+      "task_type": "binary",
+      "ground_truth": "NON_URGENT",
+      "prediction": "NON_URGENT",
+      "is_correct": true,
+      "latency_ms": 182.26,
+      "scores": {
+        "NON_URGENT": 0.9514,
+        "URGENT": 0.0486
+      },
+      "error": null,
+      "metadata": {
+        "confidence": 0.7198,
+        "model": "laya-rl-agent"
+      }
+    }
+  ]
+}
