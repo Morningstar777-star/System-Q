@@ -28,7 +28,7 @@ widget:
 Rather than generating paragraphs of text or multi-token strings, System Q evaluates discrete decision spaces in **exactly 1 forward pass** with **0 tokens generated**, achieving **88.0% accuracy** at **~209 ms latency** on consumer 4GB VRAM hardware.
 
 - **GitHub Repository:** [https://github.com/Morningstar777-star/System-Q](https://github.com/Morningstar777-star/System-Q)
-- **Live Interactive Demo:** [https://huggingface.co/spaces/LuciferMorningstar777/system-q-demo](https://huggingface.co/spaces/LuciferMorningstar777/system-q-demo)
+- **Web Demo:** Included via `python app.py` (Gradio UI)
 - **Developer:** [LuciferMorningstar777](https://huggingface.co/LuciferMorningstar777)
 
 ---

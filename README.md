@@ -6,8 +6,8 @@
 ### Building a Fast, Accurate System 1 Decision Architecture from Qwen2.5-3B
 
 [![GitHub stars](https://img.shields.io/github/stars/Morningstar777-star/System-Q?style=for-the-badge&color=blue)](https://github.com/Morningstar777-star/System-Q)
-[![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow?style=for-the-badge)](https://huggingface.co/LuciferMorningstar777/system-q-3b-decision)
-[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live%20Demo-orange?style=for-the-badge)](https://huggingface.co/spaces/LuciferMorningstar777/system-q-demo)
+[![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow?style=for-the-badge)](https://huggingface.co/LuciferMorningstar777/system-q-3b-decision)
+[![Web UI](https://img.shields.io/badge/Web%20UI-Gradio-orange?style=for-the-badge)](#-interactive-web-demo)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg?style=for-the-badge)](LICENSE)
 [![Hardware](https://img.shields.io/badge/Hardware-4GB%20VRAM%20RTX%203050-purple?style=for-the-badge)](#)
 

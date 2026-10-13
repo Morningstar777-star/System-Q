@@ -47,3 +47,4 @@ models/checkpoints/
 
 # System generated logs
 logs/*.log
+deploy_hf_space/
