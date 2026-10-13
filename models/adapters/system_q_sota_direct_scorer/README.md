@@ -27,7 +27,7 @@ widget:
 
 Rather than generating paragraphs of text or multi-token strings, System Q evaluates discrete decision spaces in **exactly 1 forward pass** with **0 tokens generated**, achieving **88.0% accuracy** at **~209 ms latency** on consumer 4GB VRAM hardware.
 
-- **GitHub Repository:** [https://github.com/Morningstar777-star/system-q](https://github.com/Morningstar777-star/system-q)
+- **GitHub Repository:** [https://github.com/Morningstar777-star/System-Q](https://github.com/Morningstar777-star/System-Q)
 - **Live Interactive Demo:** [https://huggingface.co/spaces/LuciferMorningstar777/system-q-demo](https://huggingface.co/spaces/LuciferMorningstar777/system-q-demo)
 - **Developer:** [LuciferMorningstar777](https://huggingface.co/LuciferMorningstar777)
 
@@ -66,7 +66,7 @@ peft_model = PeftModel.from_pretrained(base_model, "LuciferMorningstar777/system
 model = peft_model.merge_and_unload()
 model.eval()
 
-# (Alternatively, clone github.com/Morningstar777-star/system-q for the 2-line high-level Python API)
+# (Alternatively, clone github.com/Morningstar777-star/System-Q for the 2-line high-level Python API)
 ```
 
 Using the System Q Python API:

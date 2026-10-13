@@ -32,7 +32,7 @@ def upload(repo_id: str, token: str = None):
         commit_message="Upload System Q SOTA LoRA Adapter (88% benchmark accuracy on 100 questions)"
     )
     
-    print(f"\n✅ Upload Complete! Your model is live at: https://huggingface.co/{repo_id}")
+    print(f"\n[SUCCESS] Upload Complete! Your model is live at: https://huggingface.co/{repo_id}")
 
 
 if __name__ == "__main__":

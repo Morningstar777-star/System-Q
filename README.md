@@ -5,7 +5,7 @@
 # ⚡ System Q
 ### Building a Fast, Accurate System 1 Decision Architecture from Qwen2.5-3B
 
-[![GitHub stars](https://img.shields.io/github/stars/Morningstar777-star/system-q?style=for-the-badge&color=blue)](https://github.com/Morningstar777-star/system-q)
+[![GitHub stars](https://img.shields.io/github/stars/Morningstar777-star/System-Q?style=for-the-badge&color=blue)](https://github.com/Morningstar777-star/System-Q)
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow?style=for-the-badge)](https://huggingface.co/LuciferMorningstar777/system-q-3b-decision)
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live%20Demo-orange?style=for-the-badge)](https://huggingface.co/spaces/LuciferMorningstar777/system-q-demo)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg?style=for-the-badge)](LICENSE)
@@ -70,8 +70,8 @@ Evaluated on **100 realistic, held-out email tasks** (50 Scam Detection + 50 Cus
 ### Installation
 ```bash
 pip install torch transformers peft bitsandbytes accelerate
-git clone https://github.com/Morningstar777-star/system-q.git
-cd system-q
+git clone https://github.com/Morningstar777-star/System-Q.git
+cd System-Q
 ```
 
 ### Python API
@@ -196,7 +196,7 @@ If you use System Q in your research or production systems, please cite:
   author={Lucifer Morningstar},
   year={2026},
   publisher={GitHub},
-  howpublished={\url{https://github.com/Morningstar777-star/system-q}}
+  howpublished={\url{https://github.com/Morningstar777-star/System-Q}}
 }
 ```
 
