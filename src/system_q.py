@@ -103,6 +103,8 @@ class SystemQ:
             default_path = os.path.join(base_dir, "models", "adapters", "system_q_sota_direct_scorer")
             if os.path.exists(default_path):
                 adapter_path = default_path
+            else:
+                adapter_path = "LuciferMorningstar777/system-q-3b-decision"
 
         print(f"Initializing System Q ({precision} precision)...", flush=True)
         self.tokenizer, base_model, _ = load_qwen_model_and_tokenizer(precision=precision)
